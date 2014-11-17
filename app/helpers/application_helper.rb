@@ -7,4 +7,14 @@ module ApplicationHelper
       "#{page_title} | #{base_title}"
     end
   end
+  
+  def flash_alert_class(type)
+    case type
+      when :notice, 'notice' then "alert alert-info"
+      when :success, 'success' then "alert alert-success"
+      when :alert, 'alert' then "alert alert-warning"
+      when :error, 'error' then "alert alert-danger"
+      else type
+    end
+  end
 end

@@ -1,0 +1,15 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table#user-list {
+  col.user-name { width: 120px }
+  col.user-email {  }
+  col.btn-show { width: 70px }
+  col.btn-edit { width: 60px }
+  col.btn-destroy { width: 85px }
+}
+
+div.user-page-navigate {
+  margin-top: 10px;
+}
