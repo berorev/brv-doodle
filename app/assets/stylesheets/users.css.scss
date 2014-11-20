@@ -13,3 +13,15 @@ table#user-list {
 div.user-page-navigate {
   margin-top: 10px;
 }
+
+dl.user-info {
+  dt {
+    margin-bottom: 5px;
+    &::after {
+      content: ":"
+    }
+  }
+  dd {
+    margin-bottom: 5px;
+  }
+}

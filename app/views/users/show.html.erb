@@ -1,14 +1,14 @@
-<p id="notice"><%= notice %></p>
+<h1>Show user</h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+<div class="row">
+  <dl class="user-info dl-horizontal col-md-6 col-md-offset-3">
+    <dt>Name</dt>
+    <dd><%= @user.name %></dd>
+    <dt>Email</dt>
+    <dd><%= @user.email %></dd>
+  </dl>
+</div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-primary' %>
+<%= link_to 'Back', users_path, class: 'btn btn-default' %>
